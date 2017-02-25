@@ -3,12 +3,26 @@
   align: center;
   vertical-align: middle;
 }
-.center{
+
+.center, .play1, .jogador2{
   padding: 10px 10px 10px 10px;
 }
-.play1{
-  padding: 10px 10px 10px 10px;
+
+#name_jogador1, #name_jogador2{
+  border: 0px;
+  text-align: center;
 }
-.jogador2{
-  padding: 10px 10px 10px 10px;
+
+.j1, .j2, .palco{
+  display: inline-block;
+}
+
+.cenario{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
 }
