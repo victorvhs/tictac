@@ -42,3 +42,10 @@
 .right{
   border-right: 1px solid green;
 }
+
+.cenario{
+  display: none;
+}
+h3{
+  text-align: center;
+}
