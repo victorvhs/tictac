@@ -26,3 +26,15 @@
   width: 100px;
   height: 100px;
 }
+.botton-right{
+  border-bottom: 1px solid green;
+  border-right: 1px solid green;
+}
+
+.botton{
+  border-bottom: 1px solid green;
+}
+
+.right{
+  border-right: 1px solid green;
+}
