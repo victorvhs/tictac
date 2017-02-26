@@ -1,6 +1,9 @@
-h3{
+h2{
   text-align: center;
+  color:#93ab9f;
 }
+
+
 .center{
   color: #797c7b;
   background: #93c287;
@@ -9,11 +12,15 @@ h3{
   color: #93dbd8;
 }
 
+.ganhador{
+  text-align: center;
+  display: none;
+
+}
+
 .center,.play, .play1, .jogador2{
   padding: 10px 10px 10px 10px;
   text-align: center;
-  align: center;
-  vertical-align: middle;
 }
 
 .j1, .j2, .palco{

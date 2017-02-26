@@ -52,10 +52,67 @@ $(document).ready( function(){
     $('#'+id).css('background-image',icone);
 
     var linha_coluna = id.split('-');
-    console.log(linha_coluna[0]+" :Linha\n");
-    console.log(linha_coluna[1]+" :Coluna\n\n");
+    campo[linha_coluna[0]][linha_coluna[1]] = pontos;
 
+    verifica();
 
   }
+ function verifica() {
+   var pontos = 0;
 
+   for (var i = 0; i < campo.length; i++) {
+     pontos = pontos + campo['a'][i];
+   }
+   ganhador(pontos);
+
+   pontos = 0;
+   for (var i = 0; i < campo.length; i++) {
+     pontos = pontos + campo['b'][i];
+   }
+   ganhador(pontos);
+
+   pontos = 0;
+   for (var i = 0; i < campo.length; i++) {
+     pontos = pontos + campo['c'][i];
+   }
+   ganhador(pontos);
+
+   for (var l = 0; l < campo.length;l++) {
+     pontos = 0;
+
+     pontos += campo['a'][l];
+     pontos += campo['b'][l];
+     pontos += campo['c'][l];
+     ganhador(pontos);
+   }
+
+   pontos = 0;
+   pontos = campo['a'][0] + campo['b'][1] + campo['c'][2];
+   ganhador(pontos);
+
+   pontos = 0;
+   pontos = campo['a'][2] + campo['b'][1] + campo['c'][0];
+   ganhador(pontos);
+
+ }
+
+ function ganhador(pontos) {
+   if (pontos == -3) {
+     $('#vez').html($('#name_jogador1').val() +' Ganhou !' );
+     $('.box').off();
+     $('.ganhador').show();
+     $('#btn_novo_jogo').click(function () {
+       location.reload();
+     });
+  }
+   else if(pontos == 3){
+     $('#vez').html($('#name_jogador2').val() +' Ganhou !' );
+     $('.ganhador').show();
+     $('.box').off();
+     $('#btn_novo_jogo').click(function () {
+       location.reload();
+     });
+  }
+
+ }
 });
