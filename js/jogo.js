@@ -33,6 +33,7 @@ $(document).ready( function(){
 
   $('.box').click(function(){
     var id_campo = this.id;
+    $("#"+id_campo).off();
     jogada(id_campo);
   });
 

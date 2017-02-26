@@ -36,6 +36,11 @@ h2{
   width: 100px;
   height: 100px;
 }
+
+.box:hover{
+  border: solid 3px #7fb054;
+}
+
 .botton-right{
   border-bottom: 1px solid green;
   border-right: 1px solid green;
