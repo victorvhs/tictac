@@ -1,6 +1,16 @@
 var rodada = 1;
 var campo = Array(3);
 
+campo["a"] = Array(3);
+campo["b"] = Array(3);
+campo["c"] = Array(3);
+
+for (var i = 0; i < campo.length; i++) {
+  campo['a'][i] = 0;
+  campo['b'][i] = 0;
+  campo['c'][i] = 0;
+}
+
 $(document).ready( function(){
 
   $('#btn_play').click(function(){
@@ -40,6 +50,10 @@ $(document).ready( function(){
     }
     rodada++;
     $('#'+id).css('background-image',icone);
+
+    var linha_coluna = id.split('-');
+    console.log(linha_coluna[0]+" :Linha\n");
+    console.log(linha_coluna[1]+" :Coluna\n\n");
 
 
   }
