@@ -1,3 +1,6 @@
+h3{
+  text-align: center;
+}
 .center{
   color: #797c7b;
   background: #93c287;
@@ -11,10 +14,6 @@
   text-align: center;
   align: center;
   vertical-align: middle;
-}
-
-#name_jogador1, #name_jogador2{
-  text-align: center;
 }
 
 .j1, .j2, .palco{
@@ -46,6 +45,10 @@
 .cenario{
   display: none;
 }
-h3{
+
+#name_jogador1, #name_jogador2{
   text-align: center;
+}
+#btn_play:hover{
+  background-color: rgba(110, 231, 80, 0.61);
 }
